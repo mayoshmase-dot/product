@@ -38,13 +38,14 @@
     <main>
         <section class="categories my-5">
             <div class="container">
-                <div class="text-danger errorCategories d-none">
+                <div class="row">
 
-                    <div class="row">
-
-                    </div>
                 </div>
+                <div class="text-danger errorCategories d-none"></div>
+
+            </div>
         </section>
+
         <section class="Products my-5">
             <div class="container">
                 <div class="text-danger errorProducts d-none">
@@ -66,6 +67,15 @@
                     </tbody>
                 </table>
             </div>
+        </section>
+        <section>
+            <select class="sort" onchange="displayProducts(1)">
+                <option value="title-asc">الاسم (A-Z)</option>
+                <option value="title-desc">الاسم (Z-A)</option>
+                <option value="price-asc">السعر (من الأقل للأعلى)</option>
+                <option value="price-desc">السعر (من الأعلى للأقل)</option>
+                <option value="rating-desc">الأعلى تقييمًا</option>
+            </select>
         </section>
         <section>
             <nav aria-label="Page navigation example">

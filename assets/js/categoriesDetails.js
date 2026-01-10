@@ -1,10 +1,10 @@
 const getCategories = async () => {
     const params = new URLSearchParams(location.search);
-    const slug = params.get("CategorieSlug");
-    const response = await axios.get(`https://dummyjson.com/products/category/${slug}`);
-    if(response.status ==200){
+    const Slug = params.get("CategorieSlug");
+    const response = await axios.get(`https://dummyjson.com/products/category/${Slug}`);
+    if(response.status ==200)
 return response.data ;
-}};
+};
 const displayCategories = async () => {
     const response = await getCategories();
 const result = response.products.map((product) => {

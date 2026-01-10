@@ -23,7 +23,7 @@ document.querySelector(".errorCategories").classList.remove('d-none');
 displayCategories();
 const getProducts = async (page) => {
     const skip = (page-1)*10;
-    const response = await axios.get(`https://dummyjson.com/products?limit=10&skip=${skip}`);
+   const response = await axios.get(`https://dummyjson.com/products?limit=10&skip=${skip}`);
     return response.data;
 }
 const displayProducts = async (page = 1) => {
